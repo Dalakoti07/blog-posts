@@ -42,7 +42,7 @@ export default function Datetime({
           pubDatetime={pubDatetime}
           modDatetime={modDatetime}
         />
-        <span> ({readingTime})</span> {/* display reading time */}
+        {readingTime && <span> ({readingTime})</span>}
       </span>
     </div>
   );
