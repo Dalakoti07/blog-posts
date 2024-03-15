@@ -21,6 +21,7 @@ const {
   description,
   ogImage,
   canonicalURL,
+  readingTime, // we can now directly access readingTime from frontmatter
   pubDatetime,
   modDatetime,
   tags,
@@ -68,6 +69,7 @@ const layoutProps = {
   <main id="main-content">
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
     <Datetime
+      readingTime={readingTime}
       pubDatetime={pubDatetime}
       modDatetime={modDatetime}
       size="lg"
