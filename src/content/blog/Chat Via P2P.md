@@ -4,20 +4,20 @@ pubDatetime: 2024-04-05T20:40:08Z
 modDatetime: 2024-04-05T18:59:05Z
 title: Chat Via P2P
 featured: true
-draft: true
+draft: false
 tags:
   - Android
   - Mobile
 description: A P2P chat app using web RTC
 ---
 
-![Image](../../assets/images/p2pChat/Pasted image 20240405042018.png)
+![Image](../../assets/images/p2pChat/Pasted_image_20240405042018.png)
 
 > Image taken [from](https://www.epiqglobal.com/epiq/media/thinking/blog/chat-blog-angle.jpg?ext=.jpg)
 
 # What we would be building
 
-![Image](../../assets/images/p2pChat/Pasted image 20240405050552.png)
+![Image](../../assets/images/p2pChat/Pasted_image_20240405050552.png)
 
 # Web RTC
 
@@ -41,7 +41,7 @@ detail.)
 
 # General Flow for P2P connections
 
-[!image](../../assets/images/p2pChat/Pasted image 20240405041738.png)
+![image](../../assets/images/p2pChat/Pasted_image_20240405041738.png)
 
 # Code for Signalling server
 
@@ -240,7 +240,7 @@ Which is like this in following order:
       2. in response to this it creates an offer on`peer connection`
       3. a `create_offer` event is sent to web Socket with **SDP**
    2. Not possible journey ends here
-      1. [!image](../../assets/images/p2pChat/Pasted image 20240405040149.png)
+      1. ![image](../../assets/images/p2pChat/Pasted_image_20240405040149.png)
 4. So given that client 2 is also connected to web socket, it would receive `offer_received` event with **SDP** from
    server in response to above `create_offer`
 5. Now its upto client 2 to accept this offer or not
@@ -474,7 +474,7 @@ In accordance with our code of client 1 and client 2,
 
 This is denoted by cold start on below diagram
 
-[!image](../../assets/images/p2pChat/Pasted image 20240405043217.png)
+![image](../../assets/images/p2pChat/Pasted_image_20240405043217.png)
 
 ### WebRTCManager
 
@@ -493,5 +493,6 @@ better solution, please do drop a comment.
 
 # Resources
 
-[webrtc-infrastructure](https://web.dev/articles/webrtc-infrastructure)
-[web rtc codelab](https://codelabs.developers.google.com/codelabs/webrtc-web#5)
+[Webrtc-infrastructure](https://web.dev/articles/webrtc-infrastructure)
+
+[Web rtc codelab](https://codelabs.developers.google.com/codelabs/webrtc-web#5)
