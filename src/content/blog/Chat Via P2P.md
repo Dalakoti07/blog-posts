@@ -491,6 +491,10 @@ All webRTC related things are delegated to this class see code in github repo, l
 Unable to see own's sent message in UI Activity, as a workaround emitted message in shared flow directly. You know a
 better solution, please do drop a comment.
 
+# Code
+
+Full code can be found [here](https://github.com/Dalakoti07/everthing-rtc/tree/main/file-transfer)
+
 # Resources
 
 [Webrtc-infrastructure](https://web.dev/articles/webrtc-infrastructure)
