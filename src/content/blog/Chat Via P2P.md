@@ -11,9 +11,7 @@ tags:
 description: A P2P chat app using web RTC
 ---
 
-![Image](../../assets/images/p2pChat/Pasted_image_20240405042018.png)
-
-> Image taken [from](https://www.epiqglobal.com/epiq/media/thinking/blog/chat-blog-angle.jpg?ext=.jpg)
+![Image](../../assets/images/p2pChat/tom_and_jerry.webp)
 
 # What we would be building
 
@@ -21,7 +19,7 @@ description: A P2P chat app using web RTC
 
 # Web RTC
 
-WebRTC is an open source project to enable realtime communication of audio, video and data in Web and native apps.
+WebRTC is an open source project to enable realtime communication of audio, video and data in Web and native apps. So as a result we would be using webRTC to create peer to peer connection and then using data channels to create a chat app.
 
 # Signalling server
 
