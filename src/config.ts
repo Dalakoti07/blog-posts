@@ -10,7 +10,7 @@ export const SITE: Site = {
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   // pagination in /posts page
-  postPerPage: 3,
+  postPerPage: 10,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
