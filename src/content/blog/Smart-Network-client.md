@@ -8,6 +8,7 @@ draft: false
 tags:
   - Android
   - Mobile
+  - Networks
 description: How to prioritise API calls over file uploads
 ---
 
