@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-04-19T00:40:08Z
-modDatetime: 2024-04-19T00:59:05Z
+modDatetime: 2024-04-18T19:48:57Z
 title: Android Smart Network Client
 featured: false
 draft: false
@@ -574,3 +574,7 @@ With the above code changes, nothing changes in Viewmodel level, things remains 
 And after this code execution, API calls would be prioritized over uploads
 
 ![image](../../assets/images/androidSmartNetwork/ss.png)
+
+## Code
+
+Complete code can be found [here](https://github.com/Dalakoti07/android-learning/tree/master/uploads)
