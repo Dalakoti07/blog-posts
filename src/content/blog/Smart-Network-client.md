@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-04-19T00:40:08Z
-modDatetime: 2024-04-18T19:48:57Z
+modDatetime: 2024-04-21T19:32:03Z
 title: Android Smart Network Client
 featured: false
 draft: false
