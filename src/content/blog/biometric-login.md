@@ -1,40 +1,43 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-01-16T20:40:08Z
-modDatetime: 2024-01-16T18:59:05Z
+modDatetime: 2024-07-22T16:14:28Z
 title: Using biometric login in android
 featured: false
 draft: false
 tags:
-- Android
-- Mobile
+  - Android
+  - Mobile
 description: How to use biometric login apis in android compose
 ---
 
 ## Why Biometric login
+
 Biometric credentials are not shared to server, unlike JWt auth token, login and password. It is just enabled on client side, and if client (in our case android OS) says its ok, we would get into app.
 
 Some other benefits includes
-- enhanced security
-    - uniqueness, as biometric like face, fingerprint is unique to every individual
-    - hard to spoof biometric results
-- improved convenience
-    - better speed as compared to typed password
-    - simply a touch, or a look
 
+- enhanced security
+  - uniqueness, as biometric like face, fingerprint is unique to every individual
+  - hard to spoof biometric results
+- improved convenience
+  - better speed as compared to typed password
+  - simply a touch, or a look
 
 ## Adding dependency
+
 ```kts
 implementation("androidx.biometric:biometric:1.2.0-alpha05")
 implementation("androidx.appcompat:appcompat:1.7.0-alpha03")
 ```
 
 ## Code changes
+
 - make your compose activity from `ComponentActivity` to `AppCompatActivity`
 - earlier it was showing content view as usual
-    - but now it would be lock screen or content screen depending upon lock screen state
-    - now this locked or unlocked screen would be stored in VM or repo
-    - since I am working on a single activity architecture it would be easy peassy
+  - but now it would be lock screen or content screen depending upon lock screen state
+  - now this locked or unlocked screen would be stored in VM or repo
+  - since I am working on a single activity architecture it would be easy peassy
 
 ```kotlin
 setContent {
@@ -54,9 +57,11 @@ setContent {
 ```
 
 Some more code to handle
+
 - inactivity code when `mainActivity` is paused, so that screen can be locked
 - handling BioMetric result callback and asking repository to unlock the screen
-    - and depending upon this compose would re-render and would should content screen instead of lock screen
+  - and depending upon this compose would re-render and would should content screen instead of lock screen
+
 ```kotlin
 
 	override fun onPause() {
@@ -109,8 +114,10 @@ Some more code to handle
 ```
 
 Some more code which does following
+
 - shows biometric auth prompt when not signed in
 - when signed in, show navGraph as per logged In state
+
 ```kotlin
 
 @Composable
@@ -280,6 +287,7 @@ to
 `<style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar"/>`
 
 In your user-manager repository u can have something like this
+
 ```kotlin
 
 class UserManager(
@@ -321,4 +329,4 @@ class UserManager(
 
 ```
 
-In multi activity architecture, where u have multiple activity, instead of starting `startUserInactiveTimeCounter` on onStop of `mainActivity`, you can listen to application process lifecycle change in app class, and start reacting on it. That would work like a charm. 
+In multi activity architecture, where u have multiple activity, instead of starting `startUserInactiveTimeCounter` on onStop of `mainActivity`, you can listen to application process lifecycle change in app class, and start reacting on it. That would work like a charm.

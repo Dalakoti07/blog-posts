@@ -1,14 +1,13 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-04-19T00:40:08Z
-modDatetime: 2024-04-21T19:32:03Z
+modDatetime: 2024-07-22T16:14:28Z
 title: Android Smart Network Client
 featured: false
 draft: false
 tags:
   - Android
   - Mobile
-  - Networks
 description: How to prioritise API calls over file uploads
 ---
 
