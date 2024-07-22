@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-07-22T18:12:19Z
-modDatetime: 2024-07-22T16:14:28Z
+modDatetime: 2024-07-22T18:22:15Z
 title: SOLID Principles
 featured: false
 draft: false
@@ -14,19 +14,19 @@ description: SOLID Principles in Software Engineering
 
 SOLID stands For
 
-- S - **Single Responsibility Principle (SRP)**
+- **S** - Single Responsibility Principle (SRP)
 - **O** - Open/Closed Principle (OCP)
-- **L** - **Liskov Substitution Principle (LSP)**
-- **I** - **Interface Segregation Principle (ISP)**
-- **D** - **Dependency Inversion Principle (DIP)**
+- **L** - Liskov Substitution Principle (LSP)
+- **I** - Interface Segregation Principle (ISP)
+- **D** - Dependency Inversion Principle (DIP)
 
 # TLDR
 
-SRP -
-OCP -  
-LSP -
-ISP -
-DIP -
+SRP - 1 thing in 1 class
+OCP - Code to Interfaces, not to concrete
+LSP - Subclass should be replaced blindly without breaking functionality
+ISP - No big interfaces, better to create separate simple interface then 1 bulky interface
+DIP - High modules should be dependent on low level implementation via interfaces
 
 # Single Responsibility Principle (SRP)
 
