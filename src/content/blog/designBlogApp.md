@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-07-28T14:51:42Z
-modDatetime:
+modDatetime: 2024-07-28T14:54:32Z
 title: Design Blog App
 featured: false
 draft: false
