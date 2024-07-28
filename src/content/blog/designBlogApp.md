@@ -1,14 +1,14 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-07-28T14:51:42Z
-modDatetime: 2024-07-28T14:54:32Z
+modDatetime: 2024-07-28T14:56:08Z
 title: Design Blog App
 featured: false
 draft: false
 tags:
   - Engineering
   - SystemDesign
-description: Write way to structure blog app
+description: Right way to structure blog app
 ---
 
 # Why you bother reading this article?
