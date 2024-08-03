@@ -2,8 +2,8 @@
 author: Saurabh Dalakoti
 pubDatetime: 2024-08-03T13:49:12Z
 modDatetime: 2024-04-04T06:59:05Z
-title: Animations from 1st principles
-featured: true
+title: Animations from 1st principles Part 1
+featured: false
 draft: true
 tags:
   - Mobile
