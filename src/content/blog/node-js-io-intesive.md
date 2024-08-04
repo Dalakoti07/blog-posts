@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-08-03T12:47:24Z
-modDatetime: 2024-08-03T12:48:04Z
+modDatetime: 2024-08-04T08:57:04Z
 title: Mighty Node JS
 featured: false
 draft: false
@@ -381,6 +381,8 @@ Status code distribution:
   [200]	1000 responses
 ```
 
+![Image](../../assets/images/nodeJs/node_up_python.webp)
+
 # Where Node JS loses (CPU intensive tasks)
 
 ## The Node JS code
@@ -486,9 +488,26 @@ Status code distribution:
   [200]	1000 responses
 ```
 
+![Image](../../assets/images/nodeJs/python_comback.webp)
+
 # Summary
 
 Node JS looks hell promising on IO intensive tasks, and getting chocked on CPU intensive tasks. Long live Node JS
+
+![Image](../../assets/images/nodeJs/match_tie.webp)
+
+- Case 1
+
+  - Node JS
+    - Only DB reads, non blocking IO intensive work and hence delegates to libUv and highly throughput system created 🔥
+  - Python
+    - Its also did its best, but could not compete
+
+- Case 2
+  - Node JS
+    - Now blocking CPU intensive task (77ms to calculate all primes under 1M) which will occupy event loop time, and it wont cater new incoming requests, and hence u can see that 55 requests were not catered. 😢
+  - Python
+    - Python just did all his JOB carefully, no response misses
 
 # References
 
