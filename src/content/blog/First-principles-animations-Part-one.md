@@ -1,22 +1,26 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-08-03T13:49:12Z
-modDatetime: 2024-04-04T06:59:05Z
+modDatetime: 2024-08-04T09:27:29Z
 title: Animations from 1st principles Part 1
 featured: false
-draft: true
+draft: false
 tags:
   - Mobile
 description: Part one to creating animation from scratch
 ---
 
-Start a server from python
+# Getting started
+
+Start a server from python for web illustration
 
 `python -m http.server 8000`
 
 I am trying to reproduce all the samples of coding math from this youtube channel. Do checkout his videos for its web implementation.
 
-Welcome to Part ONE
+My web repository for the [same](https://github.com/Dalakoti07/web-dev/tree/master/coding-math)
+
+Welcome to Part ONE of this series
 
 # Task 1 - lets draw lines in canvas randomly
 
@@ -339,8 +343,6 @@ We did following things
 
 # Task 4 - Circular motion
 
-![[round motion.mov]]
-
 We would be using the following diagram to create effect like this
 
 ![Image](../../assets/images/animation1stPrinc/Pasted_image_20240105024108.png)
@@ -349,7 +351,7 @@ We would be using the following diagram to create effect like this
 
 Now with extra offset added, we would have motion starting from center right.
 
-Full code [here]()
+Full code [here](https://github.com/Dalakoti07/Hello-Compose/blob/main/coding_math/src/main/java/com/dalakoti07/android/coding_math/examples/CircularPath.kt)
 
 # Task 5 - Object in circular path
 
@@ -359,13 +361,13 @@ Well this one was tricky, and had to do some sort of mirroring across the y axis
 
 ![Image](../../assets/images/animation1stPrinc/Pasted_image_20240724233726.png)
 
-Full code [here]()
+Full code [here](https://github.com/Dalakoti07/Hello-Compose/blob/main/coding_math/src/main/java/com/dalakoti07/android/coding_math/examples/CircularPath.kt)
 
 # Task 6 - Elliptical Path
 
 Motion in Elliptical Path, just a change in circular path.
 
-Full code [here]()
+Full code [here](https://github.com/Dalakoti07/Hello-Compose/blob/main/coding_math/src/main/java/com/dalakoti07/android/coding_math/examples/EclipticalPath.kt)
 
 # Task 7 - Pointer pointing to you
 
@@ -373,4 +375,8 @@ Full code [here]()
 
 ![img.png](../../assets/images/animation1stPrinc/img_paint.png)
 
-Full code [here]()
+Full code [here](https://github.com/Dalakoti07/Hello-Compose/blob/main/coding_math/src/main/java/com/dalakoti07/android/coding_math/examples/touch/DragGestureExample.kt)
+
+# Code
+
+The Repository for all code is [here](https://github.com/Dalakoti07/Hello-Compose/tree/main)
