@@ -4,7 +4,7 @@ pubDatetime: 2024-08-03T13:49:12Z
 modDatetime: 2024-08-04T09:27:29Z
 title: Animations from 1st principles Part 1
 featured: false
-draft: false
+draft: true
 tags:
   - Mobile
 description: Part one to creating animation from scratch
