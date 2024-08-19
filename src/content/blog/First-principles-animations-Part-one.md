@@ -1,10 +1,10 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-08-03T13:49:12Z
-modDatetime: 2024-08-04T09:27:29Z
+modDatetime: 2024-08-19T17:09:30Z
 title: Animations from 1st principles Part 1
 featured: false
-draft: true
+draft: false
 tags:
   - Mobile
 description: Part one to creating animation from scratch
