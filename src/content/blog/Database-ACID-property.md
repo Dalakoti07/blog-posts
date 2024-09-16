@@ -1,11 +1,12 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-08-24T16:51:09Z
-modDatetime: 2024-08-24T14:51:42Z
+modDatetime: 2024-09-16T14:26:08Z
 title: SQL database Isolation and Concurrency
 draft: false
 tags:
   - backend
+  - concurrency
 description: Discussing Isolation (ACID) and concurrency in SQL databases
 ---
 

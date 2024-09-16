@@ -6,14 +6,14 @@ title: Go Concurrency Gentle Introduction
 featured: false
 draft: false
 tags:
-- Backend
+  - concurrency
+  - Backend
 description: How to use biometric login apis in android compose
 ---
 
 # Why do we care about Concurrency?
 
 Because if we look around ourselves do we see a world doing things sequentially (1 step at a time)or do we see a world doing lots of things independently and interacting with each other? Now this is what concurrency is. Given that our surrounding and universe is concurrency. Let's see how we can model concurrency in our Software and Programming.
-
 
 ![](https://cdn-images-1.medium.com/max/800/0*T6JYv2Tv6DUb705c.gif)
 
@@ -106,7 +106,7 @@ func main() {
 }
 ```
 
-Just have a sample.txt file in your directory that can be of any size, with the above code we are creating another file named larger.txt, and copying the content of sample.txt into larger.txt until the desired size is not achieved. And at the last, if larger.txt is greater than the desired size we are truncating the larger.txt. So this is how you can create a file of size 1 GB, 20 GB from a 10 KB txt file. That being said you can verify the contents of large.txt by reading its last n lines using `tail -10 larger.txt` , make sure it has readable content, not something gibberish or binary.  
+Just have a sample.txt file in your directory that can be of any size, with the above code we are creating another file named larger.txt, and copying the content of sample.txt into larger.txt until the desired size is not achieved. And at the last, if larger.txt is greater than the desired size we are truncating the larger.txt. So this is how you can create a file of size 1 GB, 20 GB from a 10 KB txt file. That being said you can verify the contents of large.txt by reading its last n lines using `tail -10 larger.txt` , make sure it has readable content, not something gibberish or binary.
 
 # Simple Non Concurrent Code
 
@@ -162,8 +162,7 @@ console output `Time elapsed in milliseconds: 8039`
 
 So the idea behind writing this concurrent code would be the following:
 
-We would create n goroutines that would read files in batches and emit each word in channels. And we would be collecting each word from the channel, and then updating the hashmap accordingly. Simple right, one thing that needs to be taken care of since we are reading a file in batches is that we don't read half words or a word should let be completed before a batch is marked as read. And if a batch starts with characters, ignore it, and start with the next word. Complete code [here](https://github.com/Dalakoti07/tasty-languages/blob/main/go-lang/word-count/fastIO/main.go) 
-
+We would create n goroutines that would read files in batches and emit each word in channels. And we would be collecting each word from the channel, and then updating the hashmap accordingly. Simple right, one thing that needs to be taken care of since we are reading a file in batches is that we don't read half words or a word should let be completed before a batch is marked as read. And if a batch starts with characters, ignore it, and start with the next word. Complete code [here](https://github.com/Dalakoti07/tasty-languages/blob/main/go-lang/word-count/fastIO/main.go)
 
 ```go
 func main() {
@@ -233,7 +232,6 @@ func main() {
 }
 ```
 
-
 In the above code what we are doing is:
 
 We need a **mechanism** such that if only all goroutines are done with reading their part of the file chunk, then only we would process the final results or exit the program. So to achieve this we use `waitGroup` in Go, which is incremented and decremented by goroutine when they start their work and then decrements the same when the work is done. We do `waitGroup.wait()` in the main function, waiting for waitGroup to be `0` again
@@ -255,7 +253,6 @@ This can be explained with the fact that since all goroutines pushed their data 
 In this approach, we would do something like map reduce, instead of all coroutines sending each word which would bottleneck the main goroutine with so many flooded words, we can ask each coroutine to return an intermediate hashmap, and in the main goroutine, we would combine these all hashmaps to one hashmap
 
 Full code [here](https://github.com/Dalakoti07/tasty-languages/blob/main/go-lang/word-count/goroutines/wordCounterGoroutines.go)
-
 
 ```go
 func main() {
@@ -314,7 +311,4 @@ We realised that world is concurrent, and hence it's important to simulate the s
 
 Find everything [here](https://github.com/Dalakoti07/tasty-languages/tree/main/go-lang/word-count)
 
-
 If you found this helpful, please give a clap and lets connect on [Twitter](https://twitter.com/dalakoti07) and [Linkedin](https://www.linkedin.com/in/saurabh-d-990930145/)
-
-
