@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2024-09-16T14:26:08Z
-modDatetime: 2025-04-06T10:05:35Z
+modDatetime: 2025-04-06T10:13:05Z
 title: Producer-Consumer problem
 featured: false
 draft: false
@@ -9,8 +9,6 @@ tags:
   - concurrency
 description: Concurrency Problem
 ---
-
-#article/draft
 
 # Overview
 
