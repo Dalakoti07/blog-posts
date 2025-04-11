@@ -1,3 +1,9 @@
+# How it works
+
+- two remotes
+  - bitbucket
+  - github (required for commenting purpose), powered by giscus
+
 # AstroPaper 📄
 
 ![AstroPaper](public/astropaper-og.jpg)
