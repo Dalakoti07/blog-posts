@@ -1,7 +1,7 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2025-04-19T11:19:30Z
-modDatetime: 2025-04-19T10:13:05Z
+modDatetime: 2025-04-19T19:31:42Z
 title: Engineering Design Patterns Part 1
 featured: false
 draft: false
@@ -1274,4 +1274,4 @@ public class HomeAutomationDriver {
 
 ![Image](../../assets/images/designPatterns/Pasted_image_20250419161307.png)
 
-See next part
+Full codebase [here](https://github.com/Dalakoti07/lengendary-design-patterns?tab=readme-ov-file)
