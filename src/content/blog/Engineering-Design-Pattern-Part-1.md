@@ -1,9 +1,9 @@
 ---
 author: Saurabh Dalakoti
 pubDatetime: 2025-04-19T11:19:30Z
-modDatetime: 2025-04-19T19:31:42Z
+modDatetime: 2025-04-19T19:33:14Z
 title: Engineering Design Patterns Part 1
-featured: false
+featured: true
 draft: false
 tags:
   - engineering
